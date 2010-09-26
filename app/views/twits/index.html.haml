@@ -1,6 +1,6 @@
 %ul.twits
   - @twits.each do |t|
-    %li
+    %li.info
       %p
         = image_tag(t.profile_image_url)
         = t.from_user
