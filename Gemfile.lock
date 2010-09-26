@@ -36,6 +36,7 @@ GEM
     crack (0.1.8)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    haml (3.0.18)
     hashie (0.4.0)
     httparty (0.6.1)
       crack (= 0.1.8)
@@ -91,6 +92,7 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext (= 1.0.4)
+  haml
   mongoid (= 2.0.0.beta.18)
   rails (= 3.0.0)
   twitter

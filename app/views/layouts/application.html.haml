@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Random Twits
+    = stylesheet_link_tag 'blueprint/screen.css', 'application.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'blueprint/print.css', :media => 'print'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'blueprint/ie.css', :media => 'screen, projection'
+    = csrf_meta_tag 
+  %body
+    .container
+      #header
+        %h1
+          Random Twits
+      #content
+        = yield
+
+    = javascript_include_tag :defaults, :cache => true
